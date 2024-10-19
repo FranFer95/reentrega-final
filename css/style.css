@@ -1,0 +1,147 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #273746 ;
+}
+
+h1 {
+    
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 1px 1px 2px wheat;
+    
+}
+
+
+nav {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #040b11 ;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    color: wheat;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+nav h2 {
+    margin: 0;
+}
+
+#cart-icon {
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 25px;
+}
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
+    font-family: "Marcellus SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.cart-dropdown {
+    display: none;
+    position: absolute;
+    top: 90px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1000;
+
+}
+
+.cart-dropdown p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cart-dropdown.visible {
+    display: block;
+    color: #040b11;
+    
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    color: brown;
+}
+
+.cart-item img {
+    width: 50px;
+}
+button {
+    background-color:tomato;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(236, 221, 4);
+}
+
+#total {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    text-transform: uppercase;
+}
